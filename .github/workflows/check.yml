@@ -9,8 +9,8 @@ name: VPN Gate Node Check
 
 on:
   schedule:
-    - cron: '0 0 * * *'   
-  workflow_dispatch:       
+    - cron: '30 23 * * *'   # 每天纽约时间 18:30 运行
+  workflow_dispatch:    
     inputs:
       max_nodes:
         description: '最多检测多少个节点（0 = 全部）'
